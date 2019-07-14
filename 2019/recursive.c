@@ -10,37 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_putchar(char c);
 
 #define ODD_NUM(n)	(n % 2 == 1)
-
-/*
-**	[ += 1, every 2 tiers. 2 for tier 2.]
-**	For even-number tiers, the growth is 1 + nth / 2
-**		(ex. tier 2, growth 2)
-**	For odd-number tiers, the growth is the same as on the prev tier
-**		(ex. tier 3, growth 2)
-*/
 #define TIER_GROWTH(n)	(1 + ((!ODD_NUM(n)) ? (n) / 2 : ((n) - 1) / 2))
-
-/*
-**	[ += 2, every 2 tiers. 1 for tier 1.]
-**	If the door is on an odd-number tier, the door is the size of the nth
-**		(ex. tier 3, 3x3 door)
-**	On an even-numbered tier, the door is the same as on the prev tier
-**		(ex. tier 4, 3x3 door)
-*/
 #define DOOR_SIZE(n)	((ODD_NUM(nth)) ? nth : (nth) - 1)
-
-/*
-**	Tier 1 has 3 rows, tier 2 has 4, etc.
-*/
 #define TIER_ROWS(n)	(n + 2)
-
-static void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
 
 static void	ft_repeatchar(char c, int i)
 {
@@ -107,14 +82,3 @@ void		sastantua(int size)
 	recurse(1, size, 0);
 }
 
-
-#include <stdio.h>
-int		main(void)
-{
-	for (int i = 0; i <= 7; ++i)
-	{
-		printf("\nsastantua(%d);\n", i);
-		sastantua(i);
-	}
-	return (0);
-}
