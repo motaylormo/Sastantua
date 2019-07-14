@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
+void		ft_putchar(char c);
 
 #define ODD_NUM(n)	(n % 2 == 1)
 #define TIER_GROWTH(n)	(1 + ((!ODD_NUM(n)) ? (n) / 2 : ((n) - 1) / 2))
