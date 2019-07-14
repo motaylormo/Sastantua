@@ -12,6 +12,19 @@ A year later, as a piscine prefect (July 12, 2019), I decided to do Sastantua ag
 * Door size
   * If the door is on an odd-number tier, the door is the size of the nth (ex. tier 3, 3x3 door)
   * On an even-numbered tier, the door is the same as on the prev tier (ex. tier 4, 3x3 door)
+  
+| Tier | Tier rows | Door size | Tier growth |
+| ---- | --------- | --------- | ----------- |
+| 1    | 3         | 1         |
+| 2    | 4         | 1         | 2
+| 3    | 5         | 3         | 2
+| 4    | 6         | 3         | 3
+| 5    | 7         | 5         | 3
+| 6    | 8         | 5         | 4
+| 7    | 9         | 7         | 4
+| 8    | 10        | 7         | 5
+| 9    | 11        | 9         | 5
+| 10   | 12        | 9         | 6
 
 ```
 ☁  resources [master] ⚡  ./sastantua 0
