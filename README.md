@@ -5,13 +5,13 @@ A year later, as a piscine prefect (July 12, 2019), I decided to do Sastantua ag
 
 # Details
 * Tier rows
-  * nth + 2 (ex. tier 1 has 3 rows, tier 2 has 4, etc.)
+  * nth + 2
 * Tier growth:
-  * For even-number tiers, the growth is 1 + nth / 2 (ex. tier 2, growth 2)
-  * For odd-number tiers, the growth is the same as on the prev tier (ex. tier 3, growth 2)
+  * For even-number tiers, the growth is 1 + nth / 2
+  * For odd-number tiers, the growth is the same as on the prev tier
 * Door size
-  * If the door is on an odd-number tier, the door is the size of the nth (ex. tier 3, 3x3 door)
-  * On an even-numbered tier, the door is the same as on the prev tier (ex. tier 4, 3x3 door)
+  * If the door is on an odd-number tier, the door is the size of the nth
+  * On an even-numbered tier, the door is the same as on the prev tier
   
 | Tier | Tier rows | Door size | Tier growth |
 | ---- | --------- | --------- | ----------- |
