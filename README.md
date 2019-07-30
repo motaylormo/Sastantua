@@ -3,6 +3,8 @@ For me, `Sastantua` was the most emotionally charged project of the **[42 piscin
 
 A year later, as a piscine prefect (July 12, 2019), I decided to do Sastantua again and vanquish it.
 
+I did both an recursive and iterative version, and then (basically as a flex) submitted the recursive one. During corrections, my friend tested it with INT_MAX and it segfaults. (We tested the iterative one too, and it does _not_ do that.) I was sure Moulinette was going to fail me for that, but it didn't.
+
 # Details
 * Tier rows
   * nth + 2
